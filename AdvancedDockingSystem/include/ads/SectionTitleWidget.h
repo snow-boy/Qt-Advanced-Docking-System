@@ -24,8 +24,9 @@ class SectionTitleWidget : public QFrame
 	SectionContent::RefPtr _content;
 
 	// Drag & Drop (Floating)
-	QPointer<FloatingWidget> _fw;
-	QPoint _dragStartPos;
+    QPointer<QWidget> _dw;
+    QPointer<FloatingWidget> _fw;
+    QPoint _dragStartPos;
 
 	// Drag & Drop (Title/Tabs)
 	bool _tabMoving;

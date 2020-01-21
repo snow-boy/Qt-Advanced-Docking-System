@@ -1111,8 +1111,8 @@ bool ContainerWidget::restoreFloatingWidgets(QDataStream& in, int version, QList
 			fw->_contentWidget->setVisible(visible);
 		}
 		floatings.append(fw);
-		data.titleWidget->_fw = fw; // $mfreiholz: Don't look at it :-< It's more than ugly...
-	}
+        data.titleWidget->_fw = fw; // $mfreiholz: Don't look at it :-< It's more than ugly...
+    }
 	return true;
 }
 

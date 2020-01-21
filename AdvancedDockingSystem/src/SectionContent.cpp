@@ -10,7 +10,7 @@ ADS_NAMESPACE_BEGIN
 
 SectionContent::SectionContent() :
 	_uid(GetNextUid()),
-	_flags(AllFlags)
+    _flags(Closeable)
 {
 }
 

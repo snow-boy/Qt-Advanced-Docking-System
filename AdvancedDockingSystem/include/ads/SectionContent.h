@@ -27,9 +27,10 @@ public:
 	enum Flag
 	{
 		None = 0,
-		Closeable = 1,
-		AllFlags = Closeable
-	};
+        Closeable = 1,
+        Floatable = 2,
+        AllFlags = Closeable | Floatable
+    };
 	Q_DECLARE_FLAGS(Flags, Flag)
 
 	/*!
@@ -75,4 +76,6 @@ private:
 };
 
 ADS_NAMESPACE_END
+Q_DECLARE_OPERATORS_FOR_FLAGS(ADS_NS::SectionContent::Flags)
+
 #endif

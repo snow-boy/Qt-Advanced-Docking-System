@@ -139,7 +139,7 @@ QRect SectionWidget::titleAreaGeometry() const
 
 QRect SectionWidget::contentAreaGeometry() const
 {
-	return _contentsLayout->geometry();
+    return _contentsLayout->geometry();
 }
 
 void SectionWidget::addContent(const SectionContent::RefPtr& c)

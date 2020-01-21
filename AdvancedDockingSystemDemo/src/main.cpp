@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 {
 	QApplication a(argc, argv);
 	a.setQuitOnLastWindowClosed(true);
-	initStyleSheet(a);
+    initStyleSheet(a);
 
 	MainWindow mw;
 	mw.show();
